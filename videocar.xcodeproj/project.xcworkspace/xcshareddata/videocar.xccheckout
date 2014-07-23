@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D9EF0372-AC79-43EF-AE8F-EA0CA445FF13</string>
+	<key>IDESourceControlProjectName</key>
+	<string>videocar</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D1A09E1F-A3E7-4788-B632-B7AC44F34EDF</key>
+		<string>svn://localhost/smartcar/smartcar</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>videocar.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D1A09E1F-A3E7-4788-B632-B7AC44F34EDF</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>D1A09E1F-A3E7-4788-B632-B7AC44F34EDF</key>
+		<string>svn://localhost/smartcar</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>svn://localhost/smartcar/smartcar/videocar.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D1A09E1F-A3E7-4788-B632-B7AC44F34EDF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D1A09E1F-A3E7-4788-B632-B7AC44F34EDF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>IOS系统客户端源程序</string>
+		</dict>
+	</array>
+</dict>
+</plist>
