@@ -10,11 +10,7 @@
 #import "AppDelegate.h"
 #import <CoreMotion/CoreMotion.h>
 
-@interface ViewController:UIViewController{
-
-    
-}
-
+@interface ViewController:UIViewController
 
 @property (retain, nonatomic) IBOutlet UIButton *switchbtn;
 
@@ -23,7 +19,7 @@
 @property (strong, nonatomic) IBOutlet UIWebView *flowerView;
 @property (retain, nonatomic) IBOutlet UISegmentedControl *modechoice;
 @property (strong, nonatomic) CMMotionManager * _motionManager;
--(IBAction)getFlower:(id)sender;
+
 -(IBAction)quitback:(id)sender;
 - (IBAction)switchled:(id)sender;
 - (IBAction)speakerdown:(id)sender;

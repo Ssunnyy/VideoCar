@@ -5,41 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>D9EF0372-AC79-43EF-AE8F-EA0CA445FF13</string>
+	<string>4588ADA1-9DB0-49E0-8B73-BF905404F99A</string>
 	<key>IDESourceControlProjectName</key>
 	<string>videocar</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>D1A09E1F-A3E7-4788-B632-B7AC44F34EDF</key>
-		<string>svn://localhost/smartcar/smartcar</string>
+		<key>A2B71AB4-8490-4CA7-9316-72397B76081A</key>
+		<string>ssh://github.com/cycDroid/VideoCar.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>videocar.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>D1A09E1F-A3E7-4788-B632-B7AC44F34EDF</key>
+		<key>A2B71AB4-8490-4CA7-9316-72397B76081A</key>
 		<string>../..</string>
 	</dict>
-	<key>IDESourceControlProjectRepositoryRootDictionary</key>
-	<dict>
-		<key>D1A09E1F-A3E7-4788-B632-B7AC44F34EDF</key>
-		<string>svn://localhost/smartcar</string>
-	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>svn://localhost/smartcar/smartcar/videocar.xcodeproj</string>
+	<string>ssh://github.com/cycDroid/VideoCar.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>D1A09E1F-A3E7-4788-B632-B7AC44F34EDF</string>
+	<string>A2B71AB4-8490-4CA7-9316-72397B76081A</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.subversion</string>
+			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>D1A09E1F-A3E7-4788-B632-B7AC44F34EDF</string>
+			<string>A2B71AB4-8490-4CA7-9316-72397B76081A</string>
 			<key>IDESourceControlWCCName</key>
-			<string>IOS系统客户端源程序</string>
+			<string>IOS系统客户端源程序 2</string>
 		</dict>
 	</array>
 </dict>

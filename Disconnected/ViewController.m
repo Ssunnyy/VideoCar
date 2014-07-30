@@ -7,6 +7,11 @@
 #import "ViewController.h"
 #import <AudioToolbox/AudioToolbox.h>
 
+@interface ViewController()
+
+@property (nonatomic, strong) UIImageView *imageView;
+
+@end
 
 @implementation ViewController
 
@@ -42,6 +47,11 @@
     flowerView.scalesPageToFit = YES;
     [flowerView loadRequest:request];*/
 
+    
+}
+
+- (void)loadImageView
+{
     
 }
 
