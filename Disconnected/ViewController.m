@@ -6,10 +6,13 @@
 
 #import "ViewController.h"
 #import <AudioToolbox/AudioToolbox.h>
+#import "THCapture.h"
 
-@interface ViewController()
+@interface ViewController()<THCaptureDelegate>
 
 @property (nonatomic, strong) UIImageView *imageView;
+@property (nonatomic, strong) THCapture *capture;
+@property BOOL *recording;
 
 @end
 
@@ -52,11 +55,76 @@
 
 - (void)loadImageView
 {
+    if (!_imageView) {
+        _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 20, 300, 300)];
+        [self.view addSubview:_imageView];
+    }
+
+    if (!_capture) {
+        _capture = [[THCapture alloc] init];
+        _capture.frameRate = 24;
+        _capture.delegate = self;
+        _capture.captureLayer = _imageView.layer;
+        
+    }
     
+    
+    _imageView.backgroundColor = [UIColor redColor];
+    if (_recording) {
+        [self stopRecord];
+    } else {
+        [self startRecord];
+    }
+    
+    _recording = !_recording;
+    NSString *record = _recording ? @"停止" : @"开始";
+    [_recordbtn setTitle:record forState:UIControlStateNormal];
 }
 
+- (void)startRecord
+{
+    [_capture performSelector:@selector(startRecording) withObject:nil afterDelay:0.0];
+}
 
+- (void)stopRecord
+{
+    [_capture performSelector:@selector(stopRecording) withObject:nil afterDelay:0];
+}
 
+#pragma mark -
+#pragma mark CustomMethod
+
+- (void)video: (NSString *)videoPath
+didFinishSavingWithError:(NSError *) error
+  contextInfo: (void *)contextInfo{
+	if (error) {
+		NSLog(@"%@",[error localizedDescription]);
+	}
+}
+
+- (void)mergedidFinish:(NSString *)videoPath WithError:(NSError *)error
+{
+    //音频与视频合并结束，存入相册中
+    if (UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(videoPath)) {
+		UISaveVideoAtPathToSavedPhotosAlbum(videoPath, self, @selector(video:didFinishSavingWithError:contextInfo:), nil);
+	}
+}
+
+#pragma mark -
+#pragma mark THCaptureDelegate
+
+- (void)recordingFinished:(NSString*)outputPath
+{
+    //视频录制结束,为视频加上音乐
+    NSString *audioPath=[[NSBundle mainBundle] pathForResource:@"sound.m4a" ofType:nil];
+    [THCaptureUtilities mergeVideo:outputPath andAudio:audioPath andTarget:self andAction:@selector(mergedidFinish:WithError:)];
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+}
+
+- (void)recordingFaild:(NSError *)error
+{
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+}
 
 -(void)doAccess:(CMAcceleration) acceleration{
     int mode;
@@ -101,6 +169,8 @@
 - (void)viewDidLoad
 {
 	 [super viewDidLoad];
+    
+    _recording = NO;
 	// Do any additional setup after loading the view, typically from a nib.
     
     /*if(!connect_check(8000))
@@ -132,8 +202,8 @@
 - (IBAction)quitback:(id)sender {
     //[self dismissViewControllerAnimated:YES completion:nil];
     printf("video");
-   [self loadwebview];
-  
+//    [self loadwebview];
+    [self loadImageView];
     
 }
 static char led=0;
@@ -265,9 +335,12 @@ static char led=0;
 }
 
 - (void)dealloc {
+    
     [modechoice release];
     [_speaker release];
     [_switchbtn release];
+    [_capture release];
+
     [super dealloc];
 }
 @end

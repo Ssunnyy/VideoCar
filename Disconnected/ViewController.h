@@ -16,6 +16,8 @@
 
 @property (retain, nonatomic) IBOutlet UIButton *speaker;
 
+@property (retain, nonatomic) IBOutlet UIButton *recordbtn;
+
 @property (strong, nonatomic) IBOutlet UIWebView *flowerView;
 @property (retain, nonatomic) IBOutlet UISegmentedControl *modechoice;
 @property (strong, nonatomic) CMMotionManager * _motionManager;

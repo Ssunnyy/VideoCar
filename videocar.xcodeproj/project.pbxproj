@@ -19,6 +19,7 @@
 		27C5A82613F8A3E800AFB80C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C5A82513F8A3E800AFB80C /* AppDelegate.m */; };
 		27C5A82913F8A3E800AFB80C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27C5A82713F8A3E800AFB80C /* MainStoryboard.storyboard */; };
 		27C5A82C13F8A3E800AFB80C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C5A82B13F8A3E800AFB80C /* ViewController.m */; };
+		8C0073BB198A6FE200C43E1D /* sound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8C0073BA198A6FD800C43E1D /* sound.m4a */; };
 		8C015AC319890A0C00D2639D /* THCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C015AC019890A0C00D2639D /* THCapture.m */; };
 		8C015AC419890A0C00D2639D /* THCaptureUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C015AC219890A0C00D2639D /* THCaptureUtilities.m */; };
 		8C015ACE19890AD200D2639D /* back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C015AC619890AD200D2639D /* back.jpg */; };
@@ -55,6 +56,7 @@
 		27C5A82813F8A3E800AFB80C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		27C5A82A13F8A3E800AFB80C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		27C5A82B13F8A3E800AFB80C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8C0073BA198A6FD800C43E1D /* sound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sound.m4a; sourceTree = "<group>"; };
 		8C015ABF19890A0C00D2639D /* THCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCapture.h; sourceTree = "<group>"; };
 		8C015AC019890A0C00D2639D /* THCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCapture.m; sourceTree = "<group>"; };
 		8C015AC119890A0C00D2639D /* THCaptureUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCaptureUtilities.h; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 		8C015AC519890AD200D2639D /* res */ = {
 			isa = PBXGroup;
 			children = (
+				8C0073BA198A6FD800C43E1D /* sound.m4a */,
 				8C015AC619890AD200D2639D /* back.jpg */,
 				8C015AC719890AD200D2639D /* back.png */,
 				8C015AC819890AD200D2639D /* carlog.png */,
@@ -240,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C0073BB198A6FE200C43E1D /* sound.m4a in Resources */,
 				8C015ACE19890AD200D2639D /* back.jpg in Resources */,
 				8C015ACF19890AD200D2639D /* back.png in Resources */,
 				8C015AD119890AD200D2639D /* off.png in Resources */,
