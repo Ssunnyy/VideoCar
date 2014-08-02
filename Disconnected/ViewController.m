@@ -7,11 +7,13 @@
 #import "ViewController.h"
 #import <AudioToolbox/AudioToolbox.h>
 #import "THCapture.h"
+#import "MJPEGClient.h"
 
 @interface ViewController()<THCaptureDelegate>
 
 @property (nonatomic, strong) UIImageView *imageView;
 @property (nonatomic, strong) THCapture *capture;
+@property (nonatomic, strong) MJPEGClient *client;
 @property BOOL *recording;
 
 @end

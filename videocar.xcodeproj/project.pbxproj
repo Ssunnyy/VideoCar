@@ -35,6 +35,11 @@
 		8C015ADB19890B1100D2639D /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C015ADA19890B1100D2639D /* AssetsLibrary.framework */; };
 		8C015ADD19890B1800D2639D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C015ADC19890B1800D2639D /* AVFoundation.framework */; };
 		8C015ADF19890B2600D2639D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C015ADE19890B2600D2639D /* CoreGraphics.framework */; };
+		8C248FFB198C8F4800899CD6 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C248FF4198C8F4800899CD6 /* AsyncSocket.m */; };
+		8C248FFC198C8F4800899CD6 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C248FF6198C8F4800899CD6 /* Base64.m */; };
+		8C248FFD198C8F4800899CD6 /* MJPEGClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C248FF8198C8F4800899CD6 /* MJPEGClient.m */; };
+		8C248FFE198C8F4800899CD6 /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C248FFA198C8F4800899CD6 /* NSString+Utils.m */; };
+		8C249000198CC11400899CD6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C248FFF198CC11400899CD6 /* CFNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +79,15 @@
 		8C015ADA19890B1100D2639D /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		8C015ADC19890B1800D2639D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		8C015ADE19890B2600D2639D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8C248FF3198C8F4800899CD6 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		8C248FF4198C8F4800899CD6 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		8C248FF5198C8F4800899CD6 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		8C248FF6198C8F4800899CD6 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+		8C248FF7198C8F4800899CD6 /* MJPEGClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPEGClient.h; sourceTree = "<group>"; };
+		8C248FF8198C8F4800899CD6 /* MJPEGClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPEGClient.m; sourceTree = "<group>"; };
+		8C248FF9198C8F4800899CD6 /* NSString+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utils.h"; sourceTree = "<group>"; };
+		8C248FFA198C8F4800899CD6 /* NSString+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utils.m"; sourceTree = "<group>"; };
+		8C248FFF198CC11400899CD6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C249000198CC11400899CD6 /* CFNetwork.framework in Frameworks */,
 				8C015ADF19890B2600D2639D /* CoreGraphics.framework in Frameworks */,
 				8C015ADD19890B1800D2639D /* AVFoundation.framework in Frameworks */,
 				8C015ADB19890B1100D2639D /* AssetsLibrary.framework in Frameworks */,
@@ -118,6 +133,7 @@
 		27C5A81613F8A3E800AFB80C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8C248FFF198CC11400899CD6 /* CFNetwork.framework */,
 				8C015ADE19890B2600D2639D /* CoreGraphics.framework */,
 				8C015ADC19890B1800D2639D /* AVFoundation.framework */,
 				8C015ADA19890B1100D2639D /* AssetsLibrary.framework */,
@@ -133,6 +149,7 @@
 		27C5A81B13F8A3E800AFB80C /* lianjie */ = {
 			isa = PBXGroup;
 			children = (
+				8C248FF2198C8F4800899CD6 /* MJPEGClient */,
 				8C015AC519890AD200D2639D /* res */,
 				8C015ABE19890A0C00D2639D /* THCapture */,
 				18C58D30175B24E60013FA16 /* udp.c */,
@@ -187,6 +204,21 @@
 			path = res;
 			sourceTree = "<group>";
 		};
+		8C248FF2198C8F4800899CD6 /* MJPEGClient */ = {
+			isa = PBXGroup;
+			children = (
+				8C248FF3198C8F4800899CD6 /* AsyncSocket.h */,
+				8C248FF4198C8F4800899CD6 /* AsyncSocket.m */,
+				8C248FF5198C8F4800899CD6 /* Base64.h */,
+				8C248FF6198C8F4800899CD6 /* Base64.m */,
+				8C248FF7198C8F4800899CD6 /* MJPEGClient.h */,
+				8C248FF8198C8F4800899CD6 /* MJPEGClient.m */,
+				8C248FF9198C8F4800899CD6 /* NSString+Utils.h */,
+				8C248FFA198C8F4800899CD6 /* NSString+Utils.m */,
+			);
+			path = MJPEGClient;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -213,7 +245,7 @@
 		27C5A80A13F8A3E800AFB80C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "John E. Ray";
 				TargetAttributes = {
 					27C5A81213F8A3E800AFB80C = {
@@ -269,9 +301,13 @@
 				8C015AC419890A0C00D2639D /* THCaptureUtilities.m in Sources */,
 				27C5A82613F8A3E800AFB80C /* AppDelegate.m in Sources */,
 				8C015AC319890A0C00D2639D /* THCapture.m in Sources */,
+				8C248FFE198C8F4800899CD6 /* NSString+Utils.m in Sources */,
+				8C248FFD198C8F4800899CD6 /* MJPEGClient.m in Sources */,
 				27C5A82C13F8A3E800AFB80C /* ViewController.m in Sources */,
 				180E2786171ADF880062D405 /* AsyncUdpSocket.m in Sources */,
 				18C58D31175B24E70013FA16 /* udp.c in Sources */,
+				8C248FFC198C8F4800899CD6 /* Base64.m in Sources */,
+				8C248FFB198C8F4800899CD6 /* AsyncSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +339,12 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -314,10 +356,15 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -328,14 +375,25 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -345,6 +403,7 @@
 		27C5A83013F8A3E800AFB80C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Yongchao Chen (M69A5QKKU4)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yongchao Chen (M69A5QKKU4)";
@@ -353,6 +412,7 @@
 				GCC_PREFIX_HEADER = "Disconnected/videocar-Prefix.pch";
 				INFOPLIST_FILE = "Disconnected/videocar-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = videocar;
 				PROVISIONING_PROFILE = "38420A8C-4719-4284-AD44-B1DDC4A7519D";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "38420A8C-4719-4284-AD44-B1DDC4A7519D";
@@ -365,6 +425,7 @@
 		27C5A83113F8A3E800AFB80C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Yongchao Chen (M69A5QKKU4)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yongchao Chen (M69A5QKKU4)";
@@ -373,6 +434,7 @@
 				GCC_PREFIX_HEADER = "Disconnected/videocar-Prefix.pch";
 				INFOPLIST_FILE = "Disconnected/videocar-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = videocar;
 				PROVISIONING_PROFILE = "38420A8C-4719-4284-AD44-B1DDC4A7519D";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "38420A8C-4719-4284-AD44-B1DDC4A7519D";
